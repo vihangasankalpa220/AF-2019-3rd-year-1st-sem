@@ -33,20 +33,13 @@ mongodb+srv://asiri:asiri123@asicloudcluster-ka5oz.mongodb.net/test?retryWrites=
 
 ### User
 '''
-{userId: string, authId: string, username: string, password, string, dateJoined: Date, lastLogin: Date, status: int}
-'''
-
-/////////////implemented for now as//////////////////////
-
-
-'''
-{firstname:String, lastname:String, email:String, password:String, role:String, datecreated:Date authid:String}
+{firstname:String, lastname:String, email:String, password:String, role:String, datecreated:Date}
 '''
 
 
 ### Course
 '''
-{ courseId: string, courseName: string, description: string, status: int}
+{ courseId: string, courseName: string, description: string, status: boolean}
 '''
 ### Assignment
 '''
