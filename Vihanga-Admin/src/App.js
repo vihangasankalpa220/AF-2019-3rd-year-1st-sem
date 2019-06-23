@@ -13,6 +13,8 @@ import viewAllInstructors from "./components/Instructor/viewAll";
 import StudentProfile from "./components/Admin/Profile";
 import InstructorProfile from "./components/Student/Profile";
 import Chart from "./components/Admin/Chart";
+import StudentUpdate from "./components/Student/StudentUpdate";
+import MyAssignments from "./components/Student/MyAssignments";
 class App extends Component {
   render () {
     return (
@@ -33,6 +35,8 @@ class App extends Component {
               <Route exact path="/studentprofile" component={StudentProfile} />
               <Route exact path="/instructorprofile" component={InstructorProfile} />
             <Route exact path="/Chart" component={Chart} />
+            <Route exact path="/studentUpdate" component={StudentUpdate} />
+            <Route exact path="/myAssignments" component={MyAssignments} />
 
           </div>
         </div>

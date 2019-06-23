@@ -153,11 +153,11 @@ class Navbar extends Component {
                     <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button"
                        aria-haspopup="true" aria-expanded="false">Student Services</a>
                     <div className="dropdown-menu">
-                        <Link to="" className="dropdown-item">
+                        <Link to="/studentUpdate" className="dropdown-item">
                             Update Details
                         </Link>
                         <div className="dropdown-divider"></div>
-                        <Link to="" className="dropdown-item">
+                        <Link to="/myAssignments" className="dropdown-item">
                             My Assignments
                         </Link>
                     </div>

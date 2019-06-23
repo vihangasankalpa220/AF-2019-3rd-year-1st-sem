@@ -35,7 +35,9 @@ var Courses=require('./routes/Courses')
 app.use('/courses',Courses)
 
 
+var Student = require('./routes/students')
 
+app.use('/students', Student)
 
 
 
