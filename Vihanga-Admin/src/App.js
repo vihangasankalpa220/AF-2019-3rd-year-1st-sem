@@ -29,7 +29,6 @@ class App extends Component {
             <Route exact path="/studentinsert" component={Studentinsert} />
               <Route exact path="/register" component={Register} />
             <Route exact path="/courseinsert" component={Courseinsert} />
-              <Route exact path="/studentinsert" component={Studentinsert} />
               <Route exact path="/instructerinsert" component={addInstructor} />
               <Route exact path="/instructors/viewall" component={viewAllInstructors} />
               <Route exact path="/studentprofile" component={StudentProfile} />
