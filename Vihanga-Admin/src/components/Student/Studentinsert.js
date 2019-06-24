@@ -5,9 +5,8 @@ class Studentinsert extends Component {
   constructor() {
     super()
     this.state = {
-      userId: '',
-      firstName: '',
-      lastName: '',
+      first_name: '',
+      last_name: '',
       nameInFull: '',
       nic: '',
       contactNo: '',
@@ -29,9 +28,8 @@ class Studentinsert extends Component {
     e.preventDefault()
 
     const user = {
-      userId: this.state.userId,
-      firstName: this.state.firstName,
-      lastName: this.state.lastName,
+      first_name: this.state.first_name,
+      last_name: this.state.last_name,
       nameInFull: this.state.nameInFull,
       nic: this.state.nic,
       contactNo: this.state.contactNo,
@@ -55,22 +53,14 @@ class Studentinsert extends Component {
             <div className="jumbotron mt-15">
               <form noValidate onSubmit={this.onSubmit}>
                 <h2  className="h2 mb-1 font-weight-bold">Please Insert Student Details</h2>
-                <div className="form-group">
-                  <label htmlFor="userId">User ID</label>
-                  <input type="text"
-                         className="form-control"
-                         name="userId"
-                         placeholder="Enter User ID"
-                         value={this.state.userId}
-                         onChange={this.onChange} />
-                </div>
+
                 <div className="form-group">
                   <label htmlFor="firstName">First Name</label>
                   <input type="text"
                          className="form-control"
                          name="firstName"
                          placeholder="Enter First Name"
-                         value={this.state.firstName}
+                         value={this.state.first_name}
                          onChange={this.onChange} />
                 </div>
                 <div className="form-group">
@@ -79,7 +69,7 @@ class Studentinsert extends Component {
                          className="form-control"
                          name="lastName"
                          placeholder="Enter Last Name"
-                         value={this.state.lastName}
+                         value={this.state.last_name}
                          onChange={this.onChange} />
                 </div>
                 <div className="form-group">

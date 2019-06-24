@@ -2,9 +2,8 @@ const mongoose = require('mongoose');
 
 const studentSchema = mongoose.Schema({
    _id: mongoose.Schema.Types.ObjectId,
-   userId: String,
-   firstName: String,
-   lastName: String,
+   first_name: String,
+   last_name: String,
    nameInFull: String,
    nic: String,
    contactNo: String,

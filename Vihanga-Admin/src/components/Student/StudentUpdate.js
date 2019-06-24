@@ -6,9 +6,8 @@ class StudentUpdate extends Component {
     constructor() {
         super()
         this.state = {
-            userId: '',
-            firstName: '',
-            lastName: '',
+            first_name: '',
+            last_name: '',
             nameInFull: '',
             nic: '',
             contactNo: '',
@@ -30,16 +29,18 @@ class StudentUpdate extends Component {
         const token = localStorage.usertoken
         const decoded = jwt_decode(token)
         this.setState({
-            firstName: decoded.firstName,
-            lastName: decoded.lastName,
+            first_name: decoded.first-Name,
+            last_name: decoded.last_name,
             nameInFull: decoded.nameInFull,
             nic: decoded.nic,
             contactNo: decoded.contactNo,
             currentYear: decoded.currentYear,
             currentSemester: decoded.currentSemester,
             faculty: decoded.faculty,
+            subjects: decode.subjects,
             gpa: decoded.gpa,
             email: decoded.email,
+            password: decoded.password,
             role:decoded.role,
         })
     }
@@ -54,9 +55,8 @@ class StudentUpdate extends Component {
         e.preventDefault()
 
         const user = {
-            userId: this.state.userId,
-            firstName: this.state.firstName,
-            lastName: this.state.lastName,
+            first_name: this.state.first_name,
+            last_name: this.state.last_name,
             nameInFull: this.state.nameInFull,
             nic: this.state.nic,
             contactNo: this.state.contactNo,
@@ -87,21 +87,21 @@ class StudentUpdate extends Component {
 
 
                                 <div className="form-group">
-                                    <label htmlFor="firstName">First Name</label>
+                                    <label htmlFor="first_name">First Name</label>
                                     <input type="text"
                                            className="form-control"
-                                           name="firstName"
-                                           placeholder={this.state.firstName}
-                                           value={this.state.firstName}
+                                           name="first_name"
+                                           placeholder={this.state.first_name}
+                                           value={this.state.first_name}
                                            onChange={this.onChange} />
                                 </div>
                                 <div className="form-group">
-                                    <label htmlFor="lastName">Last Name</label>
+                                    <label htmlFor="last_name">Last Name</label>
                                     <input type="text"
                                            className="form-control"
-                                           name="lastName"
-                                           placeholder={this.state.lastName}
-                                           value={this.state.lastName}
+                                           name="last_name"
+                                           placeholder={this.state.last_name}
+                                           value={this.state.last_name}
                                            onChange={this.onChange} />
                                 </div>
                                 <div className="form-group">

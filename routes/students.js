@@ -4,7 +4,7 @@ const router = express.Router();
 
 const Student = require('../models/Student');
 
-//Get all products
+//Get all students
 router.get('/', (req,res,next)=>{
    Student.find()
        .exec()
@@ -23,10 +23,9 @@ router.get('/', (req,res,next)=>{
 //Add a Student
 router.post('/studentInsert', (req, res, next)=>{
    const student = new Student({
-      _id: new mongoose.Types.ObjectId,
-       userId: req.body.userId,
-       firstName: req.body.firstName,
-       lastName: req.body.lastName,
+       _id: new mongoose.Types.ObjectId,
+       first_name: req.body.first_name,
+       last_name: req.body.last_name,
        nameInFull: req.body.nameInFull,
        nic: req.body.nic,
        contactNo: req.body.contactNo,

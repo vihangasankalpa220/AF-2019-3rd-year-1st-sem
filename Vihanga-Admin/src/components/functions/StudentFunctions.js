@@ -5,9 +5,8 @@ import axios from 'axios'
 export const studentInsert = newUser => {
     return axios
         .post('students/studentInsert', {
-            userId: newUser.userId,
-            firstName: newUser.firstName,
-            lastName: newUser.lastName,
+            first_name: newUser.first_name,
+            last_name: newUser.last_name,
             nameInFull: newUser.nameInFull,
             nic: newUser.nic,
             contactNo: newUser.contactNo,
