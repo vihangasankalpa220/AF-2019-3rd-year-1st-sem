@@ -13,7 +13,7 @@
     "dateformat": "^3.0.3",
     "email-validator": "^2.0.4",
     "formik": "^1.5.7",
-    "jquery": "^1.9.1",
+    "jquery": "^3.5.0",
     "jwt-decode": "^2.2.0",
     "material-table": "^1.39.0",
     "mdbreact": "^4.12.0",
