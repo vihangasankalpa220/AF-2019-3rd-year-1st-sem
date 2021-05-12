@@ -19,7 +19,7 @@
     "mongoose": "^5.2.15",
     "express-fileupload": "^1.1.4",
     "react-select": "^2.4.3",
-    "nodemailer": "^4.4.2"
+    "nodemailer": "^6.4.16"
   },
   "devDependencies": {
     "nodemon": "^1.19.0"
